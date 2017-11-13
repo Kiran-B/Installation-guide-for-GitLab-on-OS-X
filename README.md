@@ -59,7 +59,11 @@ sudo dscl . create /Users/git NFSHomeDirectory /Users/git
 sudo cp -R /System/Library/User\ Template/English.lproj /Users/git
 ```
 
-Regardless of how you create your git user, you will need to proper ownership of its home directory using `sudo chown -R git:git /Users/git`.
+Regardless of how you create your git user, you will need to proper ownership of its home directory using:
+
+```
+sudo chown -R git:git /Users/git
+```
 
 To hide the git user from the login screen:
 
